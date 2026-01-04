@@ -122,30 +122,31 @@ python app.py
 Interactive UI for entering restaurant details and predicting ratings.
 
 Run Streamlit app:
+
 streamlit run streamlit_app.py
 
 ### 🧠 Features Used
 
--Online order availability
--Table booking availability
--Number of votes
--Approx cost for two people
--Location
--Restaurant type
--Listed city
--Listed category type
--Cuisine count
--Popular cuisine overlap count
+- Online order availability
+- Table booking availability
+- Number of votes
+- Approx cost for two people
+-  Location
+- Restaurant type
+- Listed city
+- Listed category type
+- Cuisine count
+- Popular cuisine overlap count
 
 ### 🛠️ Tech Stack
 
--Python
--Pandas, NumPy
--Scikit-learn
--Matplotlib, Seaborn
--Flask
--Streamlit
--Joblib
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Flask
+- Streamlit
+- Joblib
 
 ### ✅ How to Run the Project
 
