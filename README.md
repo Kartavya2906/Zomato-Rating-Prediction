@@ -154,9 +154,11 @@ streamlit run streamlit_app.py
 
 ### ✅ How to Run the Project
 
--Clone the repository
--Install dependencies
+- Clone the repository
+- Install dependencies
+  ```bash
    pip install -r requirements.txt
+  ```
 - Start Flask backend
 - Run Streamlit frontend
 - Enter restaurant details and get predicted rating ⭐
