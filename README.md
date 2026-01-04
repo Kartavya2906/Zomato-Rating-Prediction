@@ -32,19 +32,24 @@ https://drive.google.com/drive/folders/1Vq8eZV6KA3Y0p_V0Q8fcsQLqnTjSr1?usp=shari
 ## 📁 Project Structure
 Zomato-Rating-Prediction/
 │
+
 ├── data/
+
 │ ├── zomato.csv
 │ ├── df_clean.csv
 │ ├── X_final.csv
 │ └── y.csv
 │
+
 ├── notebooks/
+
 │ ├── eda.ipynb
 │ ├── data_cleaning_and_feature_engineering.ipynb
 │ ├── model_selection.ipynb
 │ └── model_training.ipynb
 │
 ├── model/
+
 │ ├── zomato_rating_model_rmse_0.321_20251229_0230.joblib
 │ └── zomato_rating_model_metadata_20251229_0230.json
 │
