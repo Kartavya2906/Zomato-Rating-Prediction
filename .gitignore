@@ -1,0 +1,8 @@
+data/zomato.csv
+notebooks/df_clean.csv
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Ignore Windows system files
+desktop.ini

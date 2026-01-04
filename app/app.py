@@ -1,0 +1,26 @@
+from flask import Flask, request, jsonify
+import joblib
+import numpy as np
+import json
+
+app = Flask(__name__)
+
+# Load model & metadata
+model = joblib.load("../model/zomato_rating_model_rmse_0.321_20251229_0230.joblib")
+with open("../model/zomato_rating_model_metadata_20251229_0230.json") as f:
+    meta = json.load(f)
+
+feature_order = meta["features"]
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    data = request.json
+    input_vector = [data.get(f, 0) for f in feature_order]
+    prediction = model.predict([input_vector])[0]
+
+    return jsonify({
+        "predicted_rating": round(float(prediction), 2)
+    })
+
+if __name__ == "__main__":
+    app.run(debug=True)
