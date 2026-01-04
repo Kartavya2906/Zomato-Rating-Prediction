@@ -107,7 +107,7 @@ data = {
 
 # -------- Prediction ----------
 if st.button("Predict Rating"):
-    response = requests.post("https://web-production-6d52b2.up.railway.app/", json=data)
+    response = requests.post("https://web-production-6d52b2.up.railway.app/predict", json=data)
     if response.status_code == 200:
         rating = response.json()["predicted_rating"]
         st.success(f"⭐ Predicted Rating: {rating}")
