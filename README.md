@@ -30,6 +30,7 @@ https://drive.google.com/drive/folders/1Vq8eZV6KA3Y0p_V0Q8fcsQLqnTjSr1?usp=shari
 ---
 
 ## 📁 Project Structure
+```text
 Zomato-Rating-Prediction/
 │
 ├── data/
@@ -48,10 +49,12 @@ Zomato-Rating-Prediction/
 │   ├── zomato_rating_model.joblib     # Trained ML model
 │   └── zomato_rating_model_metadata.json
 │
-├── app.py                             # Flask API for prediction
-├── streamlit_app.py                   # Streamlit web application
-├── requirements.txt                   # Project dependencies
-└── README.md                          # Project documentation
+├── app.py                             # Flask API
+├── streamlit_app.py                   # Streamlit UI
+├── requirements.txt                   # Dependencies
+└── README.md                          # Documentation
+```
+
 
 
 
