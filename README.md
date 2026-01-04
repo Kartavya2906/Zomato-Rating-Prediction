@@ -32,31 +32,27 @@ https://drive.google.com/drive/folders/1Vq8eZV6KA3Y0p_V0Q8fcsQLqnTjSr1?usp=shari
 ## 📁 Project Structure
 Zomato-Rating-Prediction/
 │
-
 ├── data/
-
-│ ├── zomato.csv
-│ ├── df_clean.csv
-│ ├── X_final.csv
-│ └── y.csv
+│   ├── zomato.csv                     # Raw dataset
+│   ├── df_clean.csv                   # Cleaned dataset
+│   ├── X_final.csv                    # Final feature set
+│   └── y.csv                          # Target variable
 │
-
 ├── notebooks/
-
-│ ├── eda.ipynb
-│ ├── data_cleaning_and_feature_engineering.ipynb
-│ ├── model_selection.ipynb
-│ └── model_training.ipynb
+│   ├── eda.ipynb                      # Exploratory Data Analysis
+│   ├── data_cleaning_and_feature_engineering.ipynb
+│   ├── model_selection.ipynb          # Model comparison & selection
+│   └── model_training.ipynb           # Final model training
 │
 ├── model/
-
-│ ├── zomato_rating_model_rmse_0.321_20251229_0230.joblib
-│ └── zomato_rating_model_metadata_20251229_0230.json
+│   ├── zomato_rating_model.joblib     # Trained ML model
+│   └── zomato_rating_model_metadata.json
 │
-├── app.py
-├── streamlit_app.py
-├── requirements.txt
-└── README.md
+├── app.py                             # Flask API for prediction
+├── streamlit_app.py                   # Streamlit web application
+├── requirements.txt                   # Project dependencies
+└── README.md                          # Project documentation
+
 
 
 ---
