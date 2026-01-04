@@ -1,0 +1,6 @@
+data: https://drive.google.com/drive/folders/1Vq8eZV6KA3Y0yP_V0Q8fcsQ0LqnTjSr1?usp=sharing
+It contains -
+      raw dataset- zomato.csv
+      cleaned dataset- df_clean.csv
+      Training dataset(features)- X_final.csv
+      Training dataset(target)- y.csv
