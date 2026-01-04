@@ -54,30 +54,6 @@ Zomato-Rating-Prediction/
 ├── requirements.txt                   # Dependencies
 └── README.md                          # Documentation
 ```
-```bash
-Zomato-Rating-Prediction/
-├── data/
-│   ├── zomato.csv
-│   ├── df_clean.csv
-│   ├── X_final.csv
-│   └── y.csv
-├── notebooks/
-│   ├── eda.ipynb
-│   ├── data_cleaning_and_feature_engineering.ipynb
-│   ├── model_selection.ipynb
-│   └── model_training.ipynb
-├── model/
-│   ├── zomato_rating_model.joblib
-│   └── zomato_rating_model_metadata.json
-├── app.py
-├── streamlit_app.py
-├── requirements.txt
-└── README.md
-```
-
-
-
-
 
 ---
 
@@ -141,17 +117,17 @@ Steps performed:
 - Output: Predicted restaurant rating
 
 Run Flask API:
-'''bash
+```bash
 python app.py
-'''
+```
 
 ### 🔹 Streamlit Application
 Interactive UI for entering restaurant details and predicting ratings.
 
 Run Streamlit app:
-'''bash
+```bash
 streamlit run streamlit_app.py
-'''
+```
 
 ### 🧠 Features Used
 
