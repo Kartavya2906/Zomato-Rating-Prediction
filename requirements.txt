@@ -9,6 +9,7 @@ joblib==1.2.0
 matplotlib
 seaborn
 requests==2.31.0
+
 # # matplotlib  
 # # seaborn
 # flask==2.3.3
