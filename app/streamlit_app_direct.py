@@ -20,7 +20,7 @@ META_PATH = os.path.join(
     "model",
     "zomato_rating_model_metadata_20251229_0230.json"
 )
-#   #
+
 @st.cache_resource
 def load_artifacts():
     model = joblib.load(MODEL_PATH)
