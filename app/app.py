@@ -44,12 +44,5 @@ def predict():
         "predicted_rating": round(float(prediction), 2)
     })
 
-@app.route("/", methods=["GET"])
-def home():
-    return jsonify({"status": "Zomato Rating API is running"})
-
-
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=8080)
-#not used in production deployment
-# Use a WSGI server like Gunicorn to run the app in production
+if __name__ == "__main__":
+    app.run(debug=True)
