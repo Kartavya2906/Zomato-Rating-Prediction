@@ -1,7 +1,9 @@
 # 🍽️ Zomato Rating Prediction
 
 An **end-to-end Machine Learning project** that predicts restaurant ratings on Zomato using key attributes such as location, restaurant type, cuisines, cost for two, online ordering, and table booking availability.  
-The project includes **EDA, data cleaning, feature engineering, model selection, training, and deployment** using **Flask** and **Streamlit**.
+The project includes **EDA, data cleaning, feature engineering, model selection, training** using **Flask** and **Streamlit**.
+**Note**: This project is **not deployed on cloud**. It can be run **locally** using the methods described below.
+
 
 ---
 
@@ -161,6 +163,32 @@ streamlit run streamlit_app.py
   ```
 - Start Flask backend
 - Run Streamlit frontend
+- #### ✅ **Method 1: Flask + Streamlit (API-based Architecture)**
+
+- Flask handles predictions via a `/predict` endpoint
+- Streamlit sends a **POST request** to Flask and displays results
+
+#### Steps:
+1. Start Flask API:
+   ```bash
+   python app.py
+   ```
+In a new terminal, start Streamlit:
+
+```bash
+streamlit run streamlit_app.py
+```
+#### ✅ Method 2: Streamlit-Only (Direct Model Loading)
+No Flask server required
+
+Streamlit directly loads the trained model and predicts internally
+
+No POST request involved
+
+Step:
+```bash
+streamlit run streamlit_app_direct.py
+```
 - Enter restaurant details and get predicted rating ⭐
 
 
