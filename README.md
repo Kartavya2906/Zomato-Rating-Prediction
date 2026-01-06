@@ -109,7 +109,7 @@ Steps performed:
 
 ---
 
-## 🚀 Deployment
+## Flask Application
 
 ### 🔹 Flask API
 
@@ -129,6 +129,13 @@ Interactive UI for entering restaurant details and predicting ratings.
 Run Streamlit app:
 ```bash
 streamlit run streamlit_app.py
+```
+
+OR
+
+Run Streamlit app directly:
+```bash
+streamlit run streamlit_app_direct.py
 ```
 
 ### 🧠 Features Used
@@ -163,7 +170,7 @@ streamlit run streamlit_app.py
   ```
 - Start Flask backend
 - Run Streamlit frontend
-- #### ✅ **Method 1: Flask + Streamlit (API-based Architecture)**
+#### ✅ **Method 1: Flask + Streamlit (API-based Architecture)**
 
 - Flask handles predictions via a `/predict` endpoint
 - Streamlit sends a **POST request** to Flask and displays results
@@ -179,11 +186,9 @@ In a new terminal, start Streamlit:
 streamlit run streamlit_app.py
 ```
 #### ✅ Method 2: Streamlit-Only (Direct Model Loading)
-No Flask server required
-
-Streamlit directly loads the trained model and predicts internally
-
-No POST request involved
+- No Flask server required
+- Streamlit directly loads the trained model and predicts internally
+- No POST request involved
 
 Step:
 ```bash
